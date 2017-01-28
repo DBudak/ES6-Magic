@@ -7,21 +7,21 @@
 //Scope Example
 let colorglobal = "red";
 function mixColors(){
-	let colorGreen = "green";
-  function mixMoreColors(){
-  	let colorBlue = "blue";
-    console.log(`Innermost function can acess all vars including global:
-    							global color: ${colorglobal}
-                  mixColors color: ${colorGreen}
-                  mixMoreColors color: ${colorBlue}`);
-  }
-  
-  mixMoreColors();
+    let colorGreen = "green";
+    function mixMoreColors(){
+    	let colorBlue = "blue";
+        console.log(`Innermost function can acess all vars including global:
+    			global color: ${colorglobal}
+                mixColors color: ${colorGreen}
+                mixMoreColors color: ${colorBlue}`);
+    }
+
+    mixMoreColors();
 }
-    console.log(`Global scope can see itself only:
-    							global color: ${colorglobal}
-                  mixColors color: undefined
-                  mixMoreColors color: undefined`);
+console.log(`Global scope can see itself only:
+			global color: ${colorglobal}
+            mixColors color: undefined
+            mixMoreColors color: undefined`);
 mixColors();
 
 //Hoisting Examples
