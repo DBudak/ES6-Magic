@@ -15,7 +15,7 @@ h1{
  */
  @mixin squre($size, $color){
    width: $size;
-   heigth: $size;
+   height: $size;
    background-color: $color;
  }
  .small-blue-square {
